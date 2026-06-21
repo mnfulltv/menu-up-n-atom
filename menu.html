@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Up N Atom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --atom-red: #E31D2B; --atom-yellow: #FFD200; --bg-dark: #0F0F0F; }
+        body { background-color: var(--bg-dark); color: #f8fafc; font-family: sans-serif; }
+        .text-atom-red { color: var(--atom-red); }
+        .text-atom-yellow { color: var(--atom-yellow); }
+        .menu-card { background-color: #1a1a1a; border: 2px solid var(--atom-red); }
+        .description { font-size: 0.75rem; color: #a1a1aa; font-style: italic; }
+        .promo-banner { background-color: var(--atom-yellow); color: var(--bg-dark); }
+    </style>
+</head>
+<body class="p-4 md:p-10">
+    <div class="max-w-4xl mx-auto menu-card rounded-2xl p-8 shadow-2xl">
+        <header class="text-center mb-10 border-b-2 border-atom-red pb-6">
+            <h1 class="text-6xl font-black italic text-white mb-2">UP N <span class="text-atom-yellow">ATOM</span></h1>
+            <p class="text-atom-red font-bold uppercase tracking-widest italic">Le fast-food spatial de Roxwood</p>
+            <div class="mt-4 inline-block px-4 py-2 font-black italic rounded promo-banner uppercase">
+                🚀 Chaque mardi : -15% sur toute la carte !
+            </div>
+        </header>
+
+        <!-- Menus -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-atom-yellow mb-6 uppercase border-b border-atom-yellow/30 pb-2">Nos Menus (avec Onions Rings & Sprunk)</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="border-b border-gray-700 py-2">
+                    <div class="flex justify-between"><span>Menu BoeufGur</span><span class="font-bold"><span class="line-through text-gray-500 mr-2 text-sm">44$</span><span class="text-atom-yellow">40$</span></span></div>
+                    <p class="description">Cheese burger.</p>
+                </div>
+                <div class="border-b border-gray-700 py-2">
+                    <div class="flex justify-between"><span>Menu Cheeese</span><span class="font-bold"><span class="line-through text-gray-500 mr-2 text-sm">46$</span><span class="text-atom-yellow">42$</span></span></div>
+                    <p class="description">Triple cheese.</p>
+                </div>
+                <div class="border-b border-gray-700 py-2">
+                    <div class="flex justify-between"><span>Menu Patriote</span><span class="font-bold"><span class="line-through text-gray-500 mr-2 text-sm">54$</span><span class="text-atom-yellow">48$</span></span></div>
+                    <p class="description">American burger.</p>
+                </div>
+                <div class="border-b border-gray-700 py-2">
+                    <div class="flex justify-between"><span>Menu Herbivore</span><span class="font-bold"><span class="line-through text-gray-500 mr-2 text-sm">39$</span><span class="text-atom-yellow">35$</span></span></div>
+                    <p class="description">Wrap veggie.</p>
+                </div>
+                <div class="border-b border-gray-700 py-2">
+                    <div class="flex justify-between"><span>Menu Empereur</span><span class="font-bold"><span class="line-through text-gray-500 mr-2 text-sm">39$</span><span class="text-atom-yellow">35$</span></span></div>
+                    <p class="description">Salade césar.</p>
+                </div>
+                <div class="border-b border-gray-700 py-2">
+                    <div class="flex justify-between"><span>Menu Coupe du Monde 2026</span><span class="font-bold"><span class="line-through text-gray-500 mr-2 text-sm">54$</span><span class="text-atom-yellow">45$</span></span></div>
+                    <p class="description">Cheese burger avec une glace melon en plus.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Burgers -->
+        <section class="mb-10 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Burgers Boeuf</h2>
+                <div class="space-y-4">
+                    <div><div class="flex justify-between"><span>American Burger</span><span class="text-atom-red font-bold">30$</span></div><p class="description">Boeuf haché, cheddar fondant, sauce secrète.</p></div>
+                    <div><div class="flex justify-between"><span>Bleeder Burger</span><span class="text-atom-red font-bold">20$</span></div><p class="description">Boeuf juteux, oignons frits, bacon croustillant.</p></div>
+                    <div><div class="flex justify-between"><span>Cheese Burger</span><span class="text-atom-red font-bold">20$</span></div><p class="description">Boeuf, double cheddar, cornichons, moutarde.</p></div>
+                    <div><div class="flex justify-between"><span>Triple Cheese</span><span class="text-atom-red font-bold">22$</span></div><p class="description">Boeuf, trois fromages fondus, oignons confits.</p></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Burgers Poulet</h2>
+                <div class="space-y-4">
+                    <div><div class="flex justify-between"><span>Chicken Burger</span><span class="text-atom-red font-bold">20$</span></div><p class="description">Filet de poulet pané, salade, mayonnaise.</p></div>
+                    <div><div class="flex justify-between"><span>Prickly Burger</span><span class="text-atom-red font-bold">20$</span></div><p class="description">Poulet épicé, piments, sauce piquante atomique.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reste du menu -->
+        <section class="grid md:grid-cols-2 gap-8 mb-10 pt-8 border-t border-atom-red">
+            <div>
+                <h2 class="text-xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Accompagnements</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between"><span>Frites Cheddar</span><span class="text-atom-red font-bold">12$</span></div>
+                    <div class="flex justify-between"><span>Patatoes</span><span class="text-atom-red font-bold">12$</span></div>
+                    <div class="flex justify-between"><span>Onions Rings</span><span class="text-atom-red font-bold">12$</span></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Salades</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between"><span>Salade César</span><span class="text-atom-red font-bold">15$</span></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Wraps</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between"><span>Wrap Poulet</span><span class="text-atom-red font-bold">15$</span></div>
+                    <div class="flex justify-between"><span>Wrap Veggie</span><span class="text-atom-red font-bold">15$</span></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Snacks</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between"><span>Bucket de Poulet</span><span class="text-atom-red font-bold">15$</span></div>
+                    <div class="flex justify-between"><span>Hot Dog</span><span class="text-atom-red font-bold">18$</span></div>
+                    <div class="flex justify-between"><span>Crousty Cheese</span><span class="text-atom-red font-bold">12$</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boissons & Desserts -->
+        <section class="grid md:grid-cols-2 gap-10 border-t border-atom-red pt-8">
+            <div>
+                <h2 class="text-2xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Boissons</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between"><span>Cola</span><span class="text-atom-red font-bold">12$</span></div>
+                    <div class="flex justify-between"><span>Sprunk</span><span class="text-atom-red font-bold">12$</span></div>
+                    <div class="flex justify-between"><span>Diabolo Melon</span><span class="text-atom-red font-bold">12$</span></div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-atom-yellow mb-4 uppercase border-b border-atom-yellow/30 pb-2">Desserts</h2>
+                <div class="space-y-3">
+                    <div class="flex justify-between"><span>Glace Melon</span><span class="text-atom-red font-bold">10$</span></div>
+                    <div class="flex justify-between"><span>Glace Météorite</span><span class="text-atom-red font-bold">10$</span></div>
+                    <div class="flex justify-between"><span>Milshake Coco</span><span class="text-atom-red font-bold">12$</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informations Pratiques -->
+        <section class="mt-10 p-6 bg-black rounded-lg border border-atom-yellow">
+            <h2 class="text-xl font-bold text-atom-yellow mb-4 uppercase">Informations Pratiques</h2>
+            <div class="text-gray-300 space-y-2">
+                <p>📍 <strong>Adresse :</strong> Bayview Dr, Roxwood</p>
+                <p>📞 <strong>Téléphone :</strong> 555-73807</p>
+                <p>✉️ <strong>Email :</strong> una@vision.com</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
